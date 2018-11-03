@@ -157,19 +157,8 @@ $(document).ready(function(){
     $("#start-game").on("click",function(){
         $btnContainer.css("display","none");
         $container.css("display","block");
-        setInterval(function(){
-        countdown--;
-        $timer.text(countdown);
-        },1000);
-        if(countdown === 0){
-            $container.css("display","none");
-            $("#game_over").css("display","block");
-            $("#correct").text(winCount);
-            $("#wrong").text(looseCount);
-           $("#unanswered").text(7-(looseCount+winCount));
-        }
-        
-    });
+        settimerInterval();
+    });   
 
     $(doneBtn).on("click",function(){
         $container.css("display","none");
@@ -178,7 +167,23 @@ $(document).ready(function(){
         $("#wrong").text(looseCount);
         $("#unanswered").text(7-(looseCount+winCount));
    });
+
+   var settimerInterval = setInterval(function(){
+    $timer.text(countdown);
+    countdown--;
+    if(countdown==0){
+       clearInterval(settimerInterval); 
+       $container.css("display","none");
+       $("#game_over").css("display","block");
+       $("#correct").text(winCount);
+       $("#wrong").text(looseCount);
+       $("#unanswered").text(7-(looseCount+winCount));
+    }
+    
+    },1000);;
 });
+
+   
 
 
 
