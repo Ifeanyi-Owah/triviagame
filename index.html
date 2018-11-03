@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trivia Game</title>
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1 class="main_header">totally trivial trivia!</h1>
+            <p>Time remaining: <span id="timer">60</span>secs</p>
+            <p>What is the First Full Length CGI Movie?</p>  
+            <input type="radio" name="CGI" value="A Bug's Life"> A Bug's Life   
+            <input type="radio" name="CGI" value="Moana">Moana
+            <input type="radio" name="CGI" value="Toy Story"> Toy Story
+            <input type="radio" name="CGI" value="The Lion King"> The Lion King
+            <p>Which one of these is not a name of the Spice girls"?</p>  
+            <input type="radio" name="Spice Girls" value="Sporty Spice"> Sporty Spice  
+            <input type="radio" name="Spice Girls" value="Ginger Spice"> Ginger Spice
+            <input type="radio" name="Spice Girls" value="Scary Spice"> Scary Spice
+            <input type="radio" name="Spice Girls" value="Sugar Spice"> Sugar Spice
+            <p>Which popular Disney movie featured the song "Circle of Life"?</p>  
+            <input type="radio" name="disney" value="Aladdin"> Aladdin   
+            <input type="radio" name="disney" value="Frozen"> Frozen
+            <input type="radio" name="disney" value="The Lion King"> The Lion King
+            <input type="radio" name="disney" value="Zootopia"> 
+            <p>Which NBA team won the most titles in the 90s?</p>  
+            <input type="radio" name="NBA" value="Chicago Bulls"> Chicago Bulls   
+            <input type="radio" name="NBA" value="Detroit Pistons"> Detroit Pistons
+            <input type="radio" name="NBA" value="L.A. Lakers"> L.A. Lakers
+            <input type="radio" name="NBA" value="Miami Heat"> Miami Heat
+            <p>Which group released the hit song, "Smells Like Teen Spirit?</p>  
+            <input type="radio" name="music group" value="Nirvana"> Nirvana   
+            <input type="radio" name="music group" value="The Cranberries"> The Cranberries 
+            <input type="radio" name="music group" value="Nickelback"> Nickelback
+            <input type="radio" name="music group" value="The Corrs">The Corrs
+            <p>Finish this line from the Fresh Prince of Bel-Air theme song "I whistled for a cab and when it came, the license plate said"</p>  
+            <input type="radio" name="Fresh Prince" value="Dice"> Dice   
+            <input type="radio" name="Fresh Prince" value="Fresh"> Fresh 
+            <input type="radio" name="Fresh Prince" value="Cab"> Cab
+            <input type="radio" name="Fresh Prince" value="Weird">Weird
+            <p>What was Doug's best friend's name?</p>  
+            <input type="radio" name="doug" value="Mark"> Mark   
+            <input type="radio" name="doug" value="Zack"> Zack 
+            <input type="radio" name="doug" value="Cindy"> Cindy
+            <input type="radio" name="doug" value="Simone">Simone
+            <p></p>
+            <button id="all_done">Done</button>
+        </div>
+        <div id="button_container">
+            <h1 class="start_header">totally trivial trivia!</h1>
+            <button id="start-game">Start</button>
+        </div>
+        <div id="game_over">
+            <h1 class="game_over_header">totally trivial trivia!</h1>
+            <p>All Done!</p>
+            <p>Correct Answers: <span id="correct">0</span></p>
+            <p>Wrong Answers: <span id="wrong">0</span></p>
+            <p>Unanswered: <span id="unanswered">0</span></p>
+        </div>
+        
+        <!-- <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>     -->
+        <script src="assets/javascript/jquery-3.3.1.min.js">
+        </script>
+        <script src="assets/javascript/app.js">
+        </script>
+    </body>
+</html>
